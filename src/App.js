@@ -49,7 +49,7 @@ class App extends Component{
             api_data.map(data =>(
                 <li key={data.buyAt}>
                   <strong>User Name: </strong><span>{data.userName}</span><br />
-                  <strong>{data.time}</strong><br /><br />
+                  <strong>{new Date().toLocaleTimeString()}</strong><br /><br />
                   <strong>Coin Name: </strong><span>{data.name}</span><br />
                   <strong>Buy At: </strong><span>{data.buyAt} </span>
                   <strong>Total Buy At: </strong><span>{data.totalBuyAt} </span>
