@@ -39,7 +39,7 @@ class App extends Component{
     var { isLoaded, api_data } = this.state;
 
     if(!isLoaded){
-      return <div>Loading ...</div>;
+      return <div style={{color:"#ffffff"}}>Loading ...</div>;
     }
     return (
 
