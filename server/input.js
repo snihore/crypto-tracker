@@ -8,10 +8,17 @@ const inputData = [
     },
     {
         buyAt: 18.029,
-        quantity: 5,
+        quantity: 3,
         name: "Sourabh Nihore",
         type:"DOGE/INR",
         smallType:"dogeinr"
+    },
+    {
+        buyAt: 0.55199,
+        quantity: 204,
+        name: "Sourabh Nihore",
+        type:"BTT/INR",
+        smallType:"bttinr"
     },
     {
         buyAt: 0.55745,
