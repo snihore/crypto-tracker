@@ -43,21 +43,21 @@ class App extends Component{
     }
     return (
 
-      <div className="App">
+      <div className="App" style={{backgroundColor:"#000000"}}>
         <ul style={{listStyleType:"none"}}>
           {
             api_data.map(data =>(
                 <li key={data.buyAt}>
-                  <strong>User Name: </strong><span>{data.userName}</span><br />
-                  <strong>{new Date().toLocaleTimeString()}</strong><br /><br />
-                  <strong>Coin Name: </strong><span>{data.name}</span><br />
-                  <strong>Buy At: </strong><span>{data.buyAt} </span>
-                  <strong>Total Buy At: </strong><span>{data.totalBuyAt} </span>
-                  <strong>Quantity: </strong><span>{data.quantity}</span><br />
-                  <strong>LTP: </strong><span>{data.last} </span>
-                  <strong>Total Now: </strong><span>{data.totalNow} </span><br />
-                  <strong>P&amp;L: </strong><span>{data.profit_and_loss} </span>
-                  <strong>ROI: </strong><span>{data.profit_and_loss_per}% </span><br />
+                  <strong style={{color:"#ffffff"}}>User Name: </strong><span style={{color:"#ffffff"}}>{data.userName}</span><br />
+                  <strong style={{color:"#ffffff"}}>{new Date().toLocaleTimeString()}</strong><br /><br />
+                  <strong style={{color:"#ffffff"}}>Coin Name: </strong><span style={{color:"#ffffff"}}>{data.name}</span><br />
+                  <strong style={{color:"#ffffff"}}>Buy At: </strong><span style={{color:"#ffffff"}}>{data.buyAt} </span>
+                  <strong style={{color:"#ffffff"}}>Total Buy At: </strong><span style={{color:"#ffffff"}}>{data.totalBuyAt} </span>
+                  <strong style={{color:"#ffffff"}}>Quantity: </strong><span style={{color:"#ffffff"}}>{data.quantity}</span><br />
+                  <strong style={{color:"#ffffff"}}>LTP: </strong><span style={{color:"#ffffff"}}>{data.last} </span>
+                  <strong style={{color:"#ffffff"}}>Total Now: </strong><span style={{color:"#ffffff"}}>{data.totalNow} </span><br />
+                  <strong style={{color:"#ffffff"}}>P&amp;L: </strong><strong style={{color: data.profit_and_loss >= 0 ? "#00ff00" : "#ff0000"}}>{data.profit_and_loss} </strong>
+                  <strong style={{color:"#ffffff"}}>ROI: </strong><strong style={{color: data.profit_and_loss_per >= 0 ? "#00ff00" : "#ff0000"}}>{data.profit_and_loss_per}% </strong><br />
                   <hr />
                 </li>
             ))
