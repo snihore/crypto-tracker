@@ -24,9 +24,9 @@ app.use(express.static(publicPath));
 // });
 
 
-function getInfo(data, buyAt, quantity, userName){
+function getInfo(data, buyAt, quantity, userName, date){
 
-    const time = new Date().toLocaleTimeString();
+    const time = date;
     
     var name = data.name;
     var last = Number(data.last);
@@ -118,7 +118,7 @@ const getWazirxApiData = (res) => {
 
                     if(finalData[i].name.includes(t) && finalData[i].name.includes(type)){
 
-                        arr.push(getInfo(finalData[i], inputData[j].buyAt, inputData[j].quantity, inputData[j].name));
+                        arr.push(getInfo(finalData[i], inputData[j].buyAt, inputData[j].quantity, inputData[j].name, inputData[j].date));
     
                     }
                     

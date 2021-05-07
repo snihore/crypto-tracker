@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import totalDays from './total_days.js';
+import getDate from './get_date.js';
 
 // const URL = `https://vast-fjord-21675.herokuapp.com/`;
 
@@ -49,7 +51,8 @@ class App extends Component{
             api_data.map(data =>(
                 <li key={data.buyAt}>
                   <strong style={{color:"#ffffff"}}>User Name: </strong><span style={{color:"#ffffff"}}>{data.userName}</span><br />
-                  <strong style={{color:"#ffffff"}}>{new Date().toLocaleTimeString()}</strong><br /><br />
+                  <strong style={{color:"#ffffff"}}>{new Date().toLocaleTimeString()}</strong><br />
+                  <strong style={{color:'skyblue'}}>{totalDays(data.time, getDate())+" ago"}</strong><br /><br />
                   <strong style={{color:"#ffffff"}}>Coin Name: </strong><span style={{color:"#ffffff"}}>{data.name}</span><br />
                   <strong style={{color:"#ffffff"}}>Buy At: </strong><span style={{color:"#ffffff"}}>{data.buyAt} </span>
                   <strong style={{color:"#ffffff"}}>Total Buy At: </strong><span style={{color:"#ffffff"}}>{data.totalBuyAt} </span>
