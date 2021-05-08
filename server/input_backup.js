@@ -24,14 +24,6 @@ const inputData = [
         date: "5/5/2021"
     },
     {
-        buyAt: 0.55199,
-        quantity: 204,
-        name: "Sourabh Nihore",
-        type:"BTT/INR",
-        smallType:"bttinr",
-        date: "5/5/2021"
-    },
-    {
         buyAt: 0.55745,
         quantity: 225,
         name: "Devesh Muradiya",
@@ -46,6 +38,14 @@ const inputData = [
         type:"BTC/INR",
         smallType:"btcinr",
         date: "5/1/2021"
+    },
+    {
+        buyAt: 0.1025,
+        quantity: 1190,
+        name: "Sourabh Nihore",
+        type:"WIN/INR",
+        smallType:"wininr",
+        date: "5/8/2021"
     }
 ];
 
